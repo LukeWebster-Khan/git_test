@@ -82,6 +82,8 @@ break;
 
 ## Magic Eight Ball
 
+Uses ternary expressions and switch statements to produce 8 unique replys
+
 ```javascript
 let userName = '';
 userName ? console.log(`Hello ${username}!`) : 'Hello!'
