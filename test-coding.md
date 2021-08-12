@@ -79,3 +79,14 @@ break;
 }
 
 ```
+
+## Magic Eight Ball
+
+```javascript
+let userName = '';
+userName ? console.log(`Hello ${username}!`) : 'Hello!'
+const userQuestion = 'What age will I get married?'
+console.log(`The user asked: ${userQuestion}`);
+randomNumber = Math.floor(Math.random() * 8);
+let eightBall = '';
+```
