@@ -118,3 +118,27 @@ switch(randomNumber) {
 }
 console.log(eightBall)
 ```
+
+## Race Day
+
+This code takes checks in athletes and assigns them race numbers. The timing of the races will be seperated for the over 18's and the youths.
+
+```javascript
+let raceNumber = Math.floor(Math.random() * 1000);
+let early = true;
+const age = 18;
+
+if(early && age > 18) {
+  raceNumber += 1000;
+}
+
+if(early && age > 18) {
+  console.log(`Your race number is ${raceNumber}; your race will start at 9:30am`)
+} else if (!early && age > 18) {
+  console.log(`Your race number is ${raceNumber}; your race begins at 11:00am`)
+} else if (age < 18) {
+  console.log(`Youth registrants run at 12:30 pm (regardless of registration), your race number is ${raceNumber}`)
+}else {
+  console.log('Please approach the registration desk, Thanks!')
+}
+```
