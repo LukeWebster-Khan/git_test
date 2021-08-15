@@ -1,6 +1,6 @@
 ## Kelvin Weather 
 
-convert Kelvin to celsius, celsius to fahrenheit and produce a round number using the approiate method:
+convert Kelvin to celsius, celsius to fahrenheit and produce a round number using the appropriate method:
 
 ```javascript
 // constant level of Kelvin
