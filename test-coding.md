@@ -146,3 +146,67 @@ if(early && age > 18) {
 ## Rock, paper, scissors
 
 In this challenge I will take in a user input consisting of rock, paper or scissors and matching it up with a computer generated choice of the same contents. Special conditions will determine the winner the console the results.
+
+```javascript
+const getUserChoice = userInput => {
+userInput.toLowerCase()
+if(userInput === 'rock' || userInput === 'rock' || userInput === 'rock' || userInput === 'bomb') {return userInput
+} else {return console.log('error');}
+};
+const getComputerChoice = () => {
+const randomNumber = Math.floor(Math.random() * 3);
+switch(randomNumber) {
+  case 0:
+    return 'rock';
+  break
+  case 1:
+    return 'paper';
+  break;
+  case 2:
+    return 'scissors'
+  break;
+  }
+};
+
+const determineWinner = (userChoice, computerChoice) => {
+  if(userChoice === computerChoice) {
+    return 'OOF, the game was a Tie!!'
+  }
+   if (userChoice === 'rock') {
+    if (computerChoice === 'paper') {
+      return 'Oh No! The computer Won and so you have not!'
+    } else {
+      return 'You win!';
+    }
+  }
+
+  if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      return 'Whoops! You have LOST'
+    } else {
+      return 'HURAAH you have won squire!'
+    }
+  }
+
+  if (userChoice === 'scissors') {
+    if (computerChoice === 'rock') {
+      return 'DANG, you\'ve lost'
+    } else {
+      return 'YOU HAVE WON!'
+    }
+  }
+  if (userChoice === 'bomb') {
+    return 'you annihilate everything in sight, victory is yours'
+  }
+};
+
+const playGame = () => {
+  const userChoice = getUserChoice('bomb')
+  const computerChoice = getComputerChoice();
+  console.log(`You dealt ${userChoice}`)
+  console.log(`The computer dealt ${computerChoice}`)
+  
+  console.log(determineWinner(userChoice, computerChoice))
+}
+playGame()
+```
