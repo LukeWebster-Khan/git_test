@@ -142,3 +142,7 @@ if(early && age > 18) {
   console.log('Please approach the registration desk, Thanks!')
 }
 ```
+
+## Rock, paper, scissors
+
+In this challenge I will take in a user input consisting of rock, paper or scissors and matching it up with a computer generated choice of the same contents. Special conditions will determine the winner the console the results.
