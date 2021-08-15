@@ -210,3 +210,69 @@ const playGame = () => {
 }
 playGame()
 ```
+
+## Sleep Debt Calculator
+
+This calculator logs the total time a person has slept throughout the week and compares it with the ideal amount of sleep needed to conclude whether they get enough hours or not.
+
+```javascript
+const getSleepHours = (day) => {
+  switch(day) {
+    case 'monday':
+      return 8
+      break;
+    case 'tuesday':
+    return 7
+    break;
+    case 'wednesday':
+    return 6
+    break;
+    case 'thursday':
+    return 5
+    break;
+    case 'friday':
+    return 8
+    break
+    case 'saturday':
+    return 6
+    break;
+    case 'sunday':
+    return 8;
+    break;
+
+    default:
+    return 'Error!'
+  }
+};
+console.log(getSleepHours('monday'))
+let getActualSleepHours = () =>
+  getSleepHours('monday') +
+  getSleepHours('tuesday') +
+  getSleepHours('wednesday') +
+  getSleepHours('thursday') +
+  getSleepHours('friday') +
+  getSleepHours('saturday') +
+  getSleepHours('sunday');
+
+const getIdealSleepHours = () => {
+const idealHours = 8
+return idealHours * 7;
+}
+console.log(getActualSleepHours())
+
+if (getIdealSleepHours === getActualSleepHours) {
+  console.log('You got the perfect amount of sleep!')
+} else if (getIdealSleepHours < getActualSleepHours) {
+  console.log('You got too much sleep')
+} else {
+  return 'You didn\'t get enough sleep my friend'
+}
+
+const calculateSleepDebt = () => {
+const actualSleepHours =
+getActualSleepHours();
+const idealSleepHours =
+getidealSleepHours();
+};
+calculateSleepDebt();
+```
