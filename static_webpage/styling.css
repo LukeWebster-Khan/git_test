@@ -19,8 +19,55 @@ body {
 .footer {
   flex-shrink: 0;
   background-color: rgb(207, 207, 207);
+  padding: 20px 0;
 }
 
 .content {
   flex: 1 0 auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+  transition-duration: 1000ms;
+  transition-timing-function: 1000ms;
+  line-height: 20px;
+}
+.fa:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+  color: #fff;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #363636;
+  color: white;
+}
+
+.footer-container {
+  text-align: center;
 }
